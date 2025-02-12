@@ -10,10 +10,7 @@ function loadReviews() {
         .then(reviews => {
             console.log(reviews); // Log the fetched reviews
             const reviewsList = document.getElementById("reviews-list"); // Get the div to append reviews
-            reviews.forEach(review => {
-                const reviewElement = createReviewElement(review);
-                reviewsList.appendChild(reviewElement); // Append each review to the list
-            });
+            reviews.forEach
         })
         .catch(error => {
             console.error('There was a problem:', error);
@@ -46,19 +43,17 @@ function createReviewElement(review) {
     const repostButton = document.createElement('button'); // Create and add repost button
     repostButton.textContent = "Repost";
     repostButton.id = `repost-${review.id}`; // Unique ID based on review ID
-    repostButton.addEventListener('click', () => repostReview(review.id));
+    repostButton.addEventListener('click', () => repostButton(review.id));
     newDiv.appendChild(repostButton);
     return newDiv; // Return the created review element
 }
 
-function toggleLike(button, reviewId) {
+function toggleLike() {
     console.log('Like button clicked');
-    alert.style.visibility = "visible";
 }
 
-function repostReview(reviewId) {
+function repostReview() {
     console.log('Repost button clicked');
-    alertBox.style.visibility = "visible";
 }
 
 document.addEventListener("DOMContentLoaded", () => {

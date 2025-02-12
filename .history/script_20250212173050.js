@@ -53,7 +53,7 @@ function createReviewElement(review) {
 
 function toggleLike(button, reviewId) {
     console.log('Like button clicked');
-    alert.style.visibility = "visible";
+    alertBox.style.visibility = "visible";
 }
 
 function repostReview(reviewId) {

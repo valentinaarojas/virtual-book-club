@@ -53,13 +53,13 @@ function createReviewElement(review) {
 
 function toggleLike(button, reviewId) {
     console.log('Like button clicked');
-    alert.style.visibility = "visible";
 }
 
 function repostReview(reviewId) {
     console.log('Repost button clicked');
-    alertBox.style.visibility = "visible";
 }
+
+alertBox.
 
 document.addEventListener("DOMContentLoaded", () => {
     console.log("page loaded and ready for actions!");

@@ -51,14 +51,12 @@ function createReviewElement(review) {
     return newDiv; // Return the created review element
 }
 
-function toggleLike(button, reviewId) {
+function toggleLike(button, reviewid) {
     console.log('Like button clicked');
-    alert.style.visibility = "visible";
 }
 
 function repostReview(reviewId) {
     console.log('Repost button clicked');
-    alertBox.style.visibility = "visible";
 }
 
 document.addEventListener("DOMContentLoaded", () => {
